@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement", "Hsbc.EmployeeManagement\Hsbc.EmployeeManagement.csproj", "{863DAAFC-EB57-4392-83DD-083119FEE1EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.Tests", "Hsbc.EmployeeManagement.Tests\Hsbc.EmployeeManagement.Tests.csproj", "{469344BA-749B-400D-92DA-D60718A16F46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.BusinessEntities", "Hsbc.EmployeeManagement.BusinessEntities\Hsbc.EmployeeManagement.BusinessEntities.csproj", "{5C227F19-5814-4BA5-9FAE-CB450D3C3D5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.BusinessLogic", "Hsbc.EmployeeManagement.BusinessLogic\Hsbc.EmployeeManagement.BusinessLogic.csproj", "{5E1DC508-C4C7-48C3-8A68-E88EBDB666FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.DatabaseContext", "Hsbc.EmployeeManagement.DatabaseContext\Hsbc.EmployeeManagement.DatabaseContext.csproj", "{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{863DAAFC-EB57-4392-83DD-083119FEE1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863DAAFC-EB57-4392-83DD-083119FEE1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863DAAFC-EB57-4392-83DD-083119FEE1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863DAAFC-EB57-4392-83DD-083119FEE1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469344BA-749B-400D-92DA-D60718A16F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469344BA-749B-400D-92DA-D60718A16F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469344BA-749B-400D-92DA-D60718A16F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469344BA-749B-400D-92DA-D60718A16F46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C227F19-5814-4BA5-9FAE-CB450D3C3D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C227F19-5814-4BA5-9FAE-CB450D3C3D5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C227F19-5814-4BA5-9FAE-CB450D3C3D5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C227F19-5814-4BA5-9FAE-CB450D3C3D5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1DC508-C4C7-48C3-8A68-E88EBDB666FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1DC508-C4C7-48C3-8A68-E88EBDB666FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1DC508-C4C7-48C3-8A68-E88EBDB666FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1DC508-C4C7-48C3-8A68-E88EBDB666FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CED18E8-DB97-4F3B-A256-44EC049A538F}
+	EndGlobalSection
+EndGlobal
