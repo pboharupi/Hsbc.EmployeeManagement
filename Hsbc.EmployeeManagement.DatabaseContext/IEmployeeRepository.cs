@@ -15,6 +15,5 @@ namespace Hsbc.EmployeeManagement.DatabaseContext
         bool UpdateEmployee(Employee employee);
         bool DeleteEmployee(int id);
         Employee Get(string username);
-        IEnumerable<Employee> GetEmployees();
     }
 }

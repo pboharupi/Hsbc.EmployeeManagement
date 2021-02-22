@@ -9,7 +9,7 @@ using System.Web.Http;
 using Hsbc.EmployeeManagement.Filters;
 namespace Hsbc.EmployeeManagement.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [RoutePrefix("api")]
     public class EmployeeController : ApiController
     {
@@ -28,7 +28,7 @@ namespace Hsbc.EmployeeManagement.Controllers
         }
         [HttpPost]
         [Route("v1/employee")]
-        [Authorize(Roles = Role.Admin)]
+        [AuthorizeRequest(Roles = Role.Admin)]
         public IHttpActionResult Post(Employee employee)
         {
             var result = _employeeManager.Create(employee);
@@ -36,9 +36,9 @@ namespace Hsbc.EmployeeManagement.Controllers
         }
 
         [HttpPut]
-        [Authorize(Roles ="Admin,Employee")]
-        [Route("v1/employee/{employee.Id}")]
-        public IHttpActionResult Put(Employee employee)
+        [AuthorizeRequest(Roles ="Admin,Employee")]
+        [Route("v1/employee/{id}")]
+        public IHttpActionResult Put(int id,[FromBody]Employee employee)
         {
             var result = _employeeManager.Update(employee);
             return Ok(result);
@@ -52,15 +52,6 @@ namespace Hsbc.EmployeeManagement.Controllers
             var result = _employeeManager.Delete(id);
             return Ok(result);
         }
-        [HttpGet]
-        [Route("v1/employee")]
-        //[Authorize(Roles = Role.Admin)]
-        //[Authorize(Roles = Role.Employee)]
-        [AllowAnonymous]
-        public IHttpActionResult Get()
-        {
-            var result = _employeeManager.GetAll();
-            return Ok(result);
-        }
+        
     }
 }

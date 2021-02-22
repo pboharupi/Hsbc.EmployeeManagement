@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.Bus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.DatabaseContext", "Hsbc.EmployeeManagement.DatabaseContext\Hsbc.EmployeeManagement.DatabaseContext.csproj", "{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hsbc.EmployeeManagement.BusinessLogic.Tests", "Hsbc.EmployeeManagement.BusinessLogic.Tests\Hsbc.EmployeeManagement.BusinessLogic.Tests.csproj", "{317CB52A-1FA8-4C37-ADC1-F9A4347F94C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{426B7CDB-AAE0-4B06-9603-ED5D04256C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317CB52A-1FA8-4C37-ADC1-F9A4347F94C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317CB52A-1FA8-4C37-ADC1-F9A4347F94C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317CB52A-1FA8-4C37-ADC1-F9A4347F94C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317CB52A-1FA8-4C37-ADC1-F9A4347F94C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

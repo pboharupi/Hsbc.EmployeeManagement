@@ -39,6 +39,19 @@ namespace Hsbc.EmployeeManagement.DatabaseContext
                 Password="User@123",
                 Role="Employee",
                 UserName="user"
+            },
+            new Employee
+            {
+                Department="IT",
+                Designation="IT worker",
+                Email="ITUser@hsbc.com",
+                FirstName="Employee",
+                Id=103,
+                IsDeleted=false,
+                LastName="worker",
+                Password="Worker@123",
+                Role="Worker",
+                UserName="worker"
             }
         };
         public string Authenticate(string username, string password)
@@ -109,10 +122,6 @@ namespace Hsbc.EmployeeManagement.DatabaseContext
             return employees.FirstOrDefault(a => a.Id == id);
         }
 
-        public IEnumerable<Employee> GetEmployees()
-        {
-            return employees.Where(a=>a.IsDeleted=false);
-        }
 
         public bool UpdateEmployee(Employee employee)
         {

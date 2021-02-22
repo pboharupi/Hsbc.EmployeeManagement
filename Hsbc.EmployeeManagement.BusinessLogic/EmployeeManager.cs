@@ -30,12 +30,7 @@ namespace Hsbc.EmployeeManagement.BusinessLogic
         {
             return _employeeRepository.DeleteEmployee(id);
         }
-
-        public IEnumerable<Employee> GetAll()
-        {
-            return _employeeRepository.GetEmployees();
-        }
-
+       
         public bool Update(Employee employee)
         {
             return _employeeRepository.UpdateEmployee(employee);

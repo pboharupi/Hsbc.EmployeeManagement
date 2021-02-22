@@ -30,18 +30,11 @@ namespace Hsbc.EmployeeManagement.Filters
                 var token = requestMessage.Headers.GetValues(Constant.Authorization).FirstOrDefault();
                 var key = System.Text.Encoding.ASCII.GetBytes("abcdefghijklmnopqrstuvwxyz");
                 var jwtHandler = new JwtSecurityTokenHandler();
-                SecurityToken securityToken=null;
-                var validationParameters = new TokenValidationParameters();
-                validationParameters.IssuerSigningKey = new SymmetricSecurityKey(key);
-                var principal=jwtHandler.ValidateToken(token, validationParameters,out securityToken);
-                if (securityToken!= null)
+                var principal = jwtHandler.ReadJwtToken(token);
+                var role = principal.Claims.Where(a => a.Type == "role").FirstOrDefault().Value;
+                if (Roles.Split(',').Any(a => a.Equals(role)))
                 {
-                    var role = principal.Claims.FirstOrDefault(a => a.Type == ClaimTypes.Role);
-                    if(Roles.Split(',').Any(a => a.Equals(role)))
-                    {
-                        return true;
-                    }
-                    return false;
+                    return true;
                 }
                 return false;
             }

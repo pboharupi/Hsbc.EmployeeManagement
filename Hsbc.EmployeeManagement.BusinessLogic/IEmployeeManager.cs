@@ -13,6 +13,6 @@ namespace Hsbc.EmployeeManagement.BusinessLogic
         int Create(Employee employee);
         bool Update(Employee employee);
         bool Delete(int id);
-        IEnumerable<Employee> GetAll();
+        
     }
 }
